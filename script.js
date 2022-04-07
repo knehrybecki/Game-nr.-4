@@ -1,5 +1,5 @@
 import { rotateBall } from './ball.js'
-import { createBox,scores } from './box.js'
+import { createBox, scores } from './box.js'
 
 const main = document.querySelector('.main')
 

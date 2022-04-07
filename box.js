@@ -1,4 +1,4 @@
-import { bottom } from "./ball.js"
+import { bottom } from './ball.js'
 
 export let scores = 0
 
@@ -10,16 +10,15 @@ const getRandomSpeed = (min,max) => {
     return parseFloat(Math.random() * (max - min) + min).toFixed(2)
 } 
 
-const valuesBox = Array.from(Array(30), () => ({
+const valuesBox = Array.from(Array(20), () => ({
         height: getRandomNumberBetween(20, 60),
         speed: getRandomSpeed(2.0, 0.5),
         delay: getRandomNumberBetween(0, 55)
-    }))
+}))
 
 export const createBox = () => {
     valuesBox.forEach(item => {
         setTimeout(() => {
-
             let move = 0
 
             const game = document.querySelector('.game-item')
@@ -27,7 +26,6 @@ export const createBox = () => {
             gameBox.classList.add('game__box')
 
             const moveBox = setInterval(() => {
-
                 if (move > 385 && move < 470 && bottom < 60) {
                     clearInterval(moveBox)
 
