@@ -16,7 +16,7 @@ export const rotateBall = () => {
       }
    }, 1000/60)
 
-   window.addEventListener('keydown', event => jumpBall(event))
+   window.addEventListener('keydown', jumpBall)
 }
 
 const jumpBall = event => {
