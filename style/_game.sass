@@ -1,0 +1,96 @@
+.main
+    width: 900px
+    height: 500px
+    overflow: hidden
+    margin: auto
+    border: 5px solid $black-color
+
+    &__text
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 30px
+
+    &__cloud
+        height: 50%
+    
+    &__game
+        height: 35%
+
+.cloud,.cloud1,.cloud2,.cloud3,.cloud4,.cloud5,.cloud6
+    width: 6vw
+    position: relative
+
+.cloud
+    transform: translate(800px, 10px) scale(2.5)
+    animation: cloud 140s linear infinite
+
+.cloud1
+    transform: translate(900px, 160px) scale(2) rotateY(180deg)
+    animation: cloud 130s linear infinite
+
+.cloud2
+    transform: translate(930px, 80px)
+    animation: cloud 105s linear infinite
+
+.cloud3
+    transform: translate(1200px, -30px) scale(1.8)
+    animation: cloud 90s linear infinite
+
+.cloud4
+    transform: translate(800px, 120px) scale(1.5) rotateY(180deg)
+    animation: cloud 90s linear infinite
+
+.cloud5
+    transform: translate(850px, 100px) scale(2.2)
+    animation: cloud 140s linear infinite
+
+.cloud6
+    transform: translate(400px, 150px) scale(1.3) rotateY(180deg)
+    animation: cloud 90s linear infinite
+
+@keyframes cloud
+    0%
+        right: 0px
+
+    100%
+        right: 1300px
+
+.game-item
+    display: flex
+    align-content: center
+    justify-content: center
+    align-items: flex-end
+    width: 100%
+
+.game
+    position: relative
+
+    &__ground
+        background-color: $green-ground
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+    &__ball
+        width: 50px
+        height: 50px
+        background-color: $ball
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 25px
+        position: relative
+
+    &__box
+        width: 40px
+        background-color: $green-box
+        position: absolute
+        right: -50px
+
+.score
+    margin-top: 30px
+    height: 100px
+    font-size: 22px
+    
