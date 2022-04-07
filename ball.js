@@ -25,7 +25,6 @@ const jumpBall = event => {
    }
 
    if (event.key === 'ArrowUp'){ 
-
     let upJump =  setInterval(() => {
          if (bottom > 130) {
             clearInterval(upJump)
@@ -39,8 +38,7 @@ const jumpBall = event => {
              
                bottom -= 5
                
-               gameBall.style.bottom = `${bottom}px` 
-               
+               gameBall.style.bottom = `${bottom}px`    
             }, 1000/60)
          }
 

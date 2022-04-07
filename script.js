@@ -48,7 +48,6 @@ const startGame = () => {
     window.removeEventListener('keypress', startGame)
 
     rotateBall()
-
     createBox()
 }
 

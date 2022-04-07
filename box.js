@@ -2,18 +2,18 @@ import { bottom } from './ball.js'
 
 export let scores = 0
 
-const getRandomNumberBetween = (min,max) => {
+const getRandomNumberBetween = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-const getRandomSpeed = (min,max) => {
+const getRandomSpeed = (min, max) => {
     return parseFloat(Math.random() * (max - min) + min).toFixed(2)
 } 
 
 const valuesBox = Array.from(Array(20), () => ({
-        height: getRandomNumberBetween(20, 60),
-        speed: getRandomSpeed(2.0, 0.5),
-        delay: getRandomNumberBetween(0, 55)
+    height: getRandomNumberBetween(20, 60),
+    speed: getRandomSpeed(2.0, 0.5),
+    delay: getRandomNumberBetween(0, 55)
 }))
 
 export const createBox = () => {
